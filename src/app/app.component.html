@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    <button (click)=showConfig()>abc</button>
+  
+    <div *ngIf="config==null; then thenBlock else elseBlock"></div>
+  <ng-template #thenBlock>Content to render when condition is true.</ng-template>
+  <ng-template #elseBlock>
+  <table>
+    <tr *ngFor="let item of config; index as i">
+      <td>{{item.heroesUrl}}</td>
+      <td>{{item.textfile}}</td>
+      <td>{{i}}</td>
+    </tr>
+  </table>
+  </ng-template>
+  <select (change)="onItemChange()"  [(ngModel)]="value">
+    <option *ngFor="let value of values" value="{{value.key}}">{{value.value}}</option>
+</select>
+ {{value}}
+  </h1>
+<app-employee></app-employee>
+ 
+</div>
+
+
+

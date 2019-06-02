@@ -1,0 +1,8 @@
+[{
+    "heroesUrl": "api/heroes1",
+    "textfile": "assets/textfile.txt"
+  },
+  {
+    "heroesUrl": "api/heroes2",
+    "textfile": "assets/textfile.txt"
+  }]
